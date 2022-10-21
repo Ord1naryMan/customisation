@@ -68,7 +68,7 @@ unset color_prompt force_color_prompt
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="$ "
+    PS1="\[\033[01;34m\]$\[\033[01;00m\] "
     ;;
 *)
     ;;
