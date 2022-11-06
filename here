@@ -1,1 +1,0 @@
-sudo echo deb http://packages.linuxmint.com/ debian main upstream import >> /etc/apt/sources.list && sudo echo deb http://debian.linuxmint.com/latest/multimedia testing main non-free >> /etc/apt/sources.list
