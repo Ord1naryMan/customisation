@@ -5,11 +5,15 @@ if ! [ -e "$out_folder" ]; then
 	echo please create this directory or edit "$0"
 	exit 0
 fi
-g++ "$@".cpp -Wall -Wextra -Werror -pedantic -std=c++20 -o ./out/"$@".out
+if [[ "$2" == "-l" ]]; then
+	g++ "$1".cpp -Wall -Wextra -Werror -pedantic -std=c++20 -o ./out/"$1".out 2> "$3"
+else
+	g++ "$1".cpp -Wall -Wextra -Werror -pedantic -std=c++20 -o ./out/"$1".out
+fi
 echo compiled[+]
 read -p "Do you want to run the program?[y/n]: " a
 if [[ "$a" == "y" ]]; then
-	./out/"$@".out
+	./out/"$1".out
 fi
 echo
 
