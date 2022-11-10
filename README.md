@@ -1,10 +1,10 @@
 # bashrc
 
-.bashrc if for root
+.bashrc is for root
 
 
 bash.bashrc is for user
-Adwaita
-Gedit
-Nautilus
-Custom theme
+
+my theming
+
+compilecpp - just g++ compiler. Just for convinience))
