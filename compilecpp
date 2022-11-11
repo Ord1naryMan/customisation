@@ -10,10 +10,14 @@ if [[ "$2" == "-l" ]]; then
 else
 	g++ "$1".cpp -Wall -Wextra -Werror -pedantic -std=c++20 -o ./out/"$1".out
 fi
+is_compiled=$?
+if [ "$is_compiled" != "0" ]; then
+	echo compilation failed[-]
+	exit 0
+fi
 echo compiled[+]
 read -p "Do you want to run the program?[y/n]: " a
 if [[ "$a" == "y" ]]; then
 	./out/"$1".out
 fi
 echo
-
