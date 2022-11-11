@@ -1,10 +1,16 @@
 # bashrc
 
-.bashrc is for root
+.bashrc - root
 
 
-bash.bashrc is for user
+bash.bashrc - user
+# compilecpp
 
-my theming
+compilecpp - just g++ compiler. For convinience))
 
-compilecpp - just g++ compiler. Just for convinience))
+
+Installing:
+
+run
+
+sudo cp compilecpp /bin/compilecpp
