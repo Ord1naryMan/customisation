@@ -25,7 +25,7 @@ It will just compile.
 
 Added visual feature, now when compilation failed or has completed successfully, message will red or green respectively.
 # run
-Added new script for running compiled programs.
+Added new script for running compiled programs form 'out' dirrectory.
 Usage:
 ```bash
 run main
