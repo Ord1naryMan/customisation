@@ -17,6 +17,7 @@ or
 ```bash
 compilecpp main -o name r
 ```
+Added visual feature, now when compilation failed or has completed successfully, message will red or green respectively.
 # run
 Added new script for running compiled programs.
 Usage:
