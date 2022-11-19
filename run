@@ -1,0 +1,6 @@
+#!/bin/bash
+if [[ "$2" == "-t" ]]; then
+	time ./out/"$1".out && echo
+else
+	./out/"$1".out && echo
+fi
