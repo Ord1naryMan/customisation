@@ -35,12 +35,13 @@ Added new feature, now you can whatch your program runtime just typing:
 run main -t
 ```
 
-Installing:
-
+# Installing:
 
 ```bash
 sudo cp compilecpp /bin/compilecpp
 sudo cp run /bin/run
+sudo chmod +x /bin/compilecpp
+sudo chmod +x /bin/run
 ```
 # icons
 Icon pack that i use...
