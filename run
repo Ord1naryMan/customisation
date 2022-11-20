@@ -1,6 +1,10 @@
 #!/bin/bash
+if ! [ -e ./bin/"$1" ]; then
+	echo file ./bin/"$1" does not exist
+	exit 0
+fi
 if [[ "$2" == "-t" ]]; then
-	time ./out/"$1".out && echo
+	time ./bin/"$1" && echo
 else
-	./out/"$1".out && echo
+	./bin/"$1" && echo
 fi
